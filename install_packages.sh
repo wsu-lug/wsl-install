@@ -16,11 +16,11 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
   echo ""
   echo ""
   echo "Let's start by installing G++"
-  echo "To do this, you need to type in the command " $G++_COMMAND
+  echo "To do this, you need to type in the command " $CPP_COMMAND
   echo ""
   echo "Please enter that command now"
   # User input section
-  while [[ "$CORRECT" == 0 ]]
+  while [ "$CORRECT" == 0 ]
   do
     read CPP_INPUT
     if [[ "$G++_COMMAND" == "$CPP_INPUT" ]]; then
@@ -46,7 +46,7 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
   echo ""
   echo "Please enter the command " $DIR_COMMAND
   # User input section
-  while [[ $CORRECT == 0 ]]
+  while [ $CORRECT == 0 ]
   do
     read DIR_INPUT
     if [[ "$DIR_COMMAND" == "$DIR_INPUT" ]]; then
@@ -67,7 +67,7 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
   echo "We will use the 'cd' command to do this"
   echo ""
   echo "Please use the command " $CD_COMMAND
-  while [[ $CORRECT = 0 ]]
+  while [ $CORRECT = 0 ]
   do
     read CD_INPUT
     if [[ "$CD_COMMAND" == "$CD_INPUT" ]]; then
@@ -93,7 +93,7 @@ elif [[ "$1" == "cmake" || "$1" == "--cmake" ]]; then
   echo ""
   echo "Please enter the command " $CMAKE_COMMAND
   # User Input Section
-  while [[ $CORRECT == 0 ]]
+  while [ $CORRECT == 0 ]
   do
     read CMAKE_INPUT
     if [[ "$CMAKE_COMMAND" == "$CMAKE_INPUT" ]]; then
@@ -120,7 +120,7 @@ elif [[ "$1" == "cmake" || "$1" == "--cmake" ]]; then
   echo ""
   echo "Now we will connect VSC with WSL"
   echo "Please enter the command " $VISUAL_COMMAND
-  while [[ $CORRECT == 0 ]]
+  while [ $CORRECT == 0 ]
   do
     read VISUAL_INPUT
     if [[ "$VISUAL_COMMAND" == "$VISUAL_INPUT" ]]; then
@@ -142,7 +142,7 @@ elif [[ "$1" == "cmake" || "$1" == "--cmake" ]]; then
   echo "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl"
   echo ""
   echo "Thanks for using our program!"
-elif [[ $1 == "help || $1 == "--help" ]]; then
+elif [[ $1 == "help" || $1 == "--help" ]]; then
   echo "Options"
   echo ""
   echo "g++       Help installing G++ (start here)"
