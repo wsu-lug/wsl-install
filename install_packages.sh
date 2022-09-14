@@ -126,7 +126,7 @@ elif [[ "$1" == "cmake" || "$1" == "--cmake" ]]; then
     if [[ "$VISUAL_COMMAND" == "$VISUAL_INPUT" ]]; then
       code .
       export CORRECT=1
-    else 
+    else
       echo "That was wrong, please try again"
       echo $VISUAL_COMMAND
     fi
