@@ -3,6 +3,14 @@
 Echo Installing WSL
 wsl --install
 
+Echo Installing virtualization feature for WSL2
+runas /noprofile /user:mymachine\administrator "dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart"
+
+Echo Please install a Linux kernel update from this website
+Echo https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+Echo Press [enter] when you are done with that
+pause
+
 Echo Making sure WSL is version 2
 wsl --set-default-version 2
 
