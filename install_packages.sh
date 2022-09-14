@@ -1,12 +1,12 @@
 #!/bin/bash
 # Command variables to test against
-export G++_COMMAND = "sudo apt install g++"
-export CMAKE_COMMAND = "sudo apt install cmake"
-export DIR_COMMAND = "mkdir -p src/helloworldcpp"
-export CD_COMMAND = "cd src/helloworldcpp"
-export VISUAL_COMMAND = "code ."
+export CPP_COMMAND="sudo apt install g++"
+export CMAKE_COMMAND="sudo apt install cmake"
+export DIR_COMMAND="mkdir -p src/helloworldcpp"
+export CD_COMMAND="cd src/helloworldcpp"
+export VISUAL_COMMAND="code ."
 # Other variables to use
-export CORRECT = 0
+export CORRECT=0
 if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
   # Installing G++
   echo "Welcome to LUG's 223 installation help!"
@@ -22,17 +22,17 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
   # User input section
   while [[ "$CORRECT" == 0 ]]
   do
-    read G++_INPUT
-    if [[ "$G++_COMMAND" == "$G++_INPUT" ]]; then
+    read CPP_INPUT
+    if [[ "$G++_COMMAND" == "$CPP_INPUT" ]]; then
       sudo apt install g++
-      export CORRECT = 1
+      export CORRECT=1
     else
       echo "That was wrong, please try again"
-      echo $G++_COMMAND
+      echo $CPP_COMMAND
     fi
   done
   # Reset CORRECT
-  export CORRECT = 0
+  export CORRECT=0
   echo ""
   echo "G++ installation complete!"
   # Help student make the directory for the next part
@@ -51,14 +51,14 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
     read DIR_INPUT
     if [[ "$DIR_COMMAND" == "$DIR_INPUT" ]]; then
       mkdir -p src/helloworldcpp
-      export CORRECT = 1
+      export CORRECT=1
     else
       echo "That was wrong, please try again"
       echo $DIR_COMMAND
     fi
   done
   # Reset CORRECT
-  export CORRECT = 0
+  export CORRECT=0
   echo ""
   echo "Directory creation completed!"
   # Next we will help student move into the directory
@@ -72,14 +72,14 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
     read CD_INPUT
     if [[ "$CD_COMMAND" == "$CD_INPUT" ]]; then
       cd src/helloworldcpp
-      export CORRECT = 1
+      export CORRECT=1
     else
       echo "That was wrong, please try again"
       echo $CD_COMMAND
     fi
   done
   # Reset CORRECT
-  export CORRECT = 0
+  export CORRECT=0
   echo ""
   echo "Directory change complete!"
   # Have student complete G++ instructions and then come back
@@ -98,14 +98,14 @@ elif [[ "$1" == "cmake" || "$1" == "--cmake" ]]; then
     read CMAKE_INPUT
     if [[ "$CMAKE_COMMAND" == "$CMAKE_INPUT" ]]; then
       sudo apt install cmake
-      export CORRECT = 1
+      export CORRECT=1
     else
       echo "That was wrong, please try again"
       echo $CMAKE_COMMAND
     fi
   done
   # Reset CORRECT
-  export CORRECT = 0
+  export CORRECT=0
   echo ""
   echo "CMake installation complete!"
   # Help make sure Visual Studio Code is connected correctly
@@ -125,14 +125,14 @@ elif [[ "$1" == "cmake" || "$1" == "--cmake" ]]; then
     read VISUAL_INPUT
     if [[ "$VISUAL_COMMAND" == "$VISUAL_INPUT" ]]; then
       code .
-      export CORRECT = 1
+      export CORRECT=1
     else 
       echo "That was wrong, please try again"
       echo $VISUAL_COMMAND
     fi
   done
   # Reset CORRECT
-  export CORRECT = 0
+  export CORRECT=0
   echo ""
   echo "Visual connection completed!"
   # Wrap up
