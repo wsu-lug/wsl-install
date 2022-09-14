@@ -1,21 +1,41 @@
 #!/bin/bash
 # Command variables to test against
+export UPDATE_COMMAND="sudo apt update"
 export CPP_COMMAND="sudo apt install g++"
-export CMAKE_COMMAND="sudo apt install cmake"
 export DIR_COMMAND="mkdir -p src/helloworldcpp"
 export CD_COMMAND="cd src/helloworldcpp"
+export CMAKE_COMMAND="sudo apt install cmake"
 export VISUAL_COMMAND="code ."
 # Other variables to use
 export CORRECT=0
 if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
-  # Installing G++
+  # We need to update the repo's, otherwise Ubuntu may not find the packages to grab, creating errors (seen them before)
   echo "Welcome to LUG's 223 installation help!"
   echo "Thank yout for using this script"
   echo "If you run into problems, please use or Discord to get help"
   echo "https://lug.wsu.edu/contact.html"
   echo ""
   echo ""
-  echo "Let's start by installing G++"
+  echo "Let's start by updating the APT repositories!"
+  echo "To do this, please enter the command " $UPDATE_COMMAND
+  # User input section
+  while [ "$CORRECT" == 0 ]; do
+    read UPDATE_INPUT
+    if [[ "$UPDATE_COMMAND" == "$UPDATE_INPUT" ]]; then
+      $UPDATE_COMMAND
+      export CORRECT=1
+    else
+      echo "That was wrong, please try again"
+      echo $UPDATE_COMMAND
+    fi
+  done
+  # Reset CORRECT
+  export CORRECT=0
+  echo ""
+  echo "Update Complete!"
+  # Install G++
+  echo ""
+  echo "Now we will install G++"
   echo "To do this, you need to type in the command " $CPP_COMMAND
   echo ""
   echo "Please enter that command now"
@@ -23,7 +43,7 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
   while [ "$CORRECT" == 0 ]
   do
     read CPP_INPUT
-    if [[ "$G++_COMMAND" == "$CPP_INPUT" ]]; then
+    if [[ "$CPP_COMMAND" == "$CPP_INPUT" ]]; then
       sudo apt install g++
       export CORRECT=1
     else
