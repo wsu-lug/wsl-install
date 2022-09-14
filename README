@@ -12,13 +12,13 @@ Usage
 
 2. Run "install_ubuntu_wsl.cmd" and follow the instructions
 
-3. Setup Ubuntu through its steps
+3. When it brings up a bash screen, please change your password by running 'passwd'
 
-4. In Ubuntu, run the next script from "/mnt/c/Users/[user]/Downloads/wsl-install-main/install_packages.sh [options]"
+4. In Ubuntu, run the next script from "bash ./install_packages.sh [options]"
 
   a. Replace [user] with your Windows username, or the directory Windows stores it as. You can find this by using File Explorer, going to My Computer, the C: drive, entering the Users folder, and seeing what folder your home directory is called.
   
-  b. If Ubuntu complains about permissions to run it, run "chmod +x /mnt/c/Users/[user]/Downloads/wsl-install-main/install_packages.sh"
+  b. If Ubuntu complains about permissions to run it, run "chmod +x ./install_packages.sh"
   
   c. For the options, use 'g++' to start with it's installation. If you need to, use the option 'help' to see the options.
   
