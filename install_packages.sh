@@ -162,7 +162,7 @@ elif [[ "$1" == "cmake" || "$1" == "--cmake" ]]; then
   echo ""
   echo "You are now ready to complete the rest of the CMake instructions"
   echo "If you need any more help, please contact us"
-  echo "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl"
+  echo "https://lug.wsu.edu/contact.html"
   echo ""
   echo "Thanks for using our program!"
 elif [[ $1 == "help" || $1 == "--help" ]]; then
