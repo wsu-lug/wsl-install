@@ -8,6 +8,8 @@ Use "install_packages.sh" in Ubuntu. This will walk you through installing G++ a
 
 Usage
 
+0. Please install Visual Studio Code first: https://code.visualstudio.com/download
+
 1. Download this as a ZIP file and unip it into your Downloads folder (in Windows).
 
 2. Run "install_wsl.cmd" and follow the instructions. Make sure to REBOOT your computer.
@@ -22,4 +24,6 @@ Usage
   
   5b. For the options, use 'g++' to start with it's installation. If you need to, use the option 'help' to see the options.
   
-6. All done! Make sure you complete the rest of the instructions we don'ttalk about.
+  5c. To run this again, just go to your home directory with "cd ~". A link was made for your convenience.
+  
+6. All done! Make sure you complete the rest of the instructions we don't talk about.
