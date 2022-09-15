@@ -1,7 +1,7 @@
 # wsl-install
 Installation scripts for installing WSL on Windows 10 & 11. PLEASE be sure to run the appropriate scripts in Windows and WSL.
 
-Use "install_ubuntu_wsl.cmd" in Powershell. This will auto install the latest (supported) LTS version of Ubuntu. Once the script is done, please make sure to finish setting up Ubuntu by making a user.
+Use "install_wsl.cmd" & "install_ubuntu.cmd" in Powershell. This will auto install the latest (supported) LTS version of Ubuntu. Once the script is done, please make sure to finish setting up Ubuntu by making a user.
 
 Use "install_packages.sh" in Ubuntu. This will walk you through installing G++ and CMake. If you are taking CPT_S 223, please make sure you follow all other installation instructions to learn a few things abou the terminal.
 
@@ -10,9 +10,9 @@ Usage
 
 1. Download this as a ZIP file and unip it into your Downloads folder (in Windows).
 
-2. Run "install_ubuntu_wsl.cmd" and follow the instructions.
+2. Run "install_wsl.cmd" and follow the instructions. Make sure to REBOOT your computer.
 
-3. When it brings up a bash screen, please change your password by running 'passwd'.
+3. Run "install_ubuntu.cmd" and follow the instructions. Make sure to make a user before closing the pop-up and then go back to the script.
 
 4. In Ubuntu, run "sed -i 's/\r$//' install_packages.sh" to fix a format error.
 
