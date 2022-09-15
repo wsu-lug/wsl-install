@@ -71,6 +71,7 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
     read DIR_INPUT
     if [[ "$DIR_COMMAND" == "$DIR_INPUT" ]]; then
       mkdir -p ~/src/helloworldcpp
+      ln -s "$PWD"/install_packages.sh ~/
       export CORRECT=1
     else
       echo "That was wrong, please try again"
