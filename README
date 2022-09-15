@@ -3,14 +3,14 @@ Installation scripts for installing WSL on Windows 10 & 11. PLEASE be sure to ru
 
 Use "install_wsl.cmd" & "install_ubuntu.cmd" in Powershell. This will auto install the latest (supported) LTS version of Ubuntu. Once the script is done, please make sure to finish setting up Ubuntu by making a user.
 
-Use "install_packages.sh" in Ubuntu. This will walk you through installing G++ and CMake. If you are taking CPT_S 223, please make sure you follow all other installation instructions to learn a few things abou the terminal.
+Use "install_packages.sh" in Ubuntu. This will walk you through installing G++ and CMake. If you are taking CPT_S 223, please make sure you follow all other installation instructions to learn a few things about the terminal.
 
 
 Usage
 
 0. Please install Visual Studio Code first: https://code.visualstudio.com/download
 
-1. Download this as a ZIP file and unip it into your Downloads folder (in Windows).
+1. Download this as a ZIP file and unzip it into your Downloads folder (in Windows).
 
 2. Run "install_wsl.cmd" and follow the instructions. Make sure to REBOOT your computer.
 
