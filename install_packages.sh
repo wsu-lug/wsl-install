@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 # Command variables to test against
 export UPDATE_COMMAND="sudo apt update"
 export CPP_COMMAND="sudo apt install g++"
