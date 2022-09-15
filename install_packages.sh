@@ -70,7 +70,7 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
   do
     read DIR_INPUT
     if [[ "$DIR_COMMAND" == "$DIR_INPUT" ]]; then
-      mkdir -p src/helloworldcpp
+      mkdir -p ~/src/helloworldcpp
       export CORRECT=1
     else
       echo "That was wrong, please try again"
@@ -103,7 +103,7 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
   export CORRECT=0
   echo ""
   echo "Directory change complete!"
-  echo "Remember to run it again after the script has ended"
+  echo "Remember to run it again after the script has ended, however this time please run 'cd ~/src/helloworldcpp'"
   # Have student complete G++ instructions and then come back
   echo ""
   echo "With this help, you should be able to finish the G++ installation instructions"
