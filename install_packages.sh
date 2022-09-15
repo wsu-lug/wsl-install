@@ -84,6 +84,7 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
   # Next we will help student move into the directory
   echo ""
   echo "Now we need to go into the created directory"
+  echo "We can only demenstrate this, so afterwards please redo the command"
   echo "We will use the 'cd' command to do this"
   echo ""
   echo "Please use the command " $CD_COMMAND
@@ -102,6 +103,7 @@ if [[ "$1" == "g++" || "$1" == "--g++" ]]; then
   export CORRECT=0
   echo ""
   echo "Directory change complete!"
+  echo "Remember to run it again after the script has ended"
   # Have student complete G++ instructions and then come back
   echo ""
   echo "With this help, you should be able to finish the G++ installation instructions"
