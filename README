@@ -1,10 +1,7 @@
-# wsl-install
-Installation scripts for installing WSL on Windows 10 & 11. PLEASE be sure to run the appropriate scripts in Windows and WSL.
+# VSCode GZip Workaround
+This script will help you run VSCode in WSL if you run into the error about GZip.
 
-Use "install_wsl.cmd" & "install_ubuntu.cmd" in Powershell. This will auto install the latest (supported) LTS version of Ubuntu. Once the script is done, please make sure to finish setting up Ubuntu by making a user.
-
-Use "install_packages.sh" in Ubuntu. This will walk you through installing G++ and CMake. If you are taking CPT_S 223, please make sure you follow all other installation instructions to learn a few things about the terminal.
-
+Use "vscode-git-workaround.sh" in WSL following the steps below.
 
 Usage
 
@@ -12,18 +9,8 @@ Usage
 
 1. Download this as a ZIP file and unzip it into your Downloads folder (in Windows).
 
-2. Run "install_wsl.cmd" and follow the instructions. Make sure to REBOOT your computer.
+2. Start WSL from your Download folder from Powershell/CMD. "cd Downloads" && "wsl"
 
-3. Run "install_ubuntu.cmd" and follow the instructions. Make sure to make a user before closing the pop-up and then go back to the script.
+3. In Ubuntu, run "sed -i 's/\r$//' vscode-git-workaround.sh" to fix a format error.
 
-4. In Ubuntu, run "sed -i 's/\r$//' install_packages.sh" to fix a format error.
-
-5. In Ubuntu, run the next script from "bash ./install_packages.sh [options]".
-
-  5a. If Ubuntu complains about permissions to run it, run "chmod +x ./install_packages.sh".
-  
-  5b. For the options, use 'g++' to start with it's installation. If you need to, use the option 'help' to see the options.
-  
-  5c. To run this again, just go to your home directory with "cd ~". A link was made for your convenience.
-  
-6. All done! Make sure you complete the rest of the instructions we don't talk about.
+4. In Ubuntu, run the script "vscode-git-workaround.sh"
