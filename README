@@ -7,10 +7,8 @@ Usage
 
 0. Please install Visual Studio Code first: https://code.visualstudio.com/download
 
-1. Download this as a ZIP file and unzip it into your Downloads folder (in Windows).
+1. In WSL, download this with "wget https://github.com/wsu-lug/wsl-install/archive/refs/heads/vscode-gzip.zip"
 
-2. Start WSL from your Download folder from Powershell/CMD. "cd Downloads" && "wsl"
+2. Decompress the file with "unzip vscode-gzip.zip"
 
-3. In Ubuntu, run "sed -i 's/\r$//' vscode-git-workaround.sh" to fix a format error.
-
-4. In Ubuntu, run the script "vscode-git-workaround.sh"
+3. Run the script with "vscode-gzip/vscode-gzip-workaround.sh"
